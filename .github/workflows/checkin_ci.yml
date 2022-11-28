@@ -12,8 +12,8 @@ jobs:
     name: do_checkin
     runs-on: ubuntu-latest
     env: 
-      USERNAME: "3118485"
-      PASSWORD: "43713294"
+      USERNAME: "3118502"
+      PASSWORD: "qq344914213"
       JZDXXDZ: "江南水岸二组团"
       LONGITUDE: "106.6911223"
       LATITUDE: "29.5202925"
