@@ -14,8 +14,8 @@ import requests
 from lxml import etree
 
 '''  ##########！！！配置信息！！！(务必修改)########## '''
-USERNAME = "3118485"  # 本地打卡更改or后面就行
-PASSWORD = "43713294"  # 本地打卡更改or后面就行
+USERNAME = "3118502"  # 本地打卡更改or后面就行
+PASSWORD = "qq344914213"  # 本地打卡更改or后面就行
 # 学校拼音简写命名变量，真的会谢
 checkin_data = {
     "SFXN": "是",  
@@ -200,7 +200,7 @@ def login_ids(session: requests.Session, _is_need_captcha: bool = False):
     print("登录页面打开成功，开始解析登录页面")
     tree = etree.HTML(res.text)
     form_data = dict()
-    form_data['username'] = "3118485"
+    form_data['username'] = "3118502"
     print(USERNAME,form_data['username']);
     form_data['password'] = str(password_encrypt(tree.xpath('// *[ @ id = "pwdEncryptSalt"]/@value')[0]
                                                  , PASSWORD))
@@ -313,7 +313,7 @@ def get_final_WEU(session: requests.Session):
 def get_today_info(session: requests.Session):
     url = "http://ehall.cqupt.edu.cn/publicapp/sys/cyxsjkdk/modules/yddjk/T_XSJKDK_XSTBXX_QUERY.do"
     form_data = {
-        "TYRZM": "3118485",
+        "TYRZM": "3118502",
         "RQ": datetime.datetime.now().strftime("%Y-%m-%d"),
         "pageNumber": "1",
     }
